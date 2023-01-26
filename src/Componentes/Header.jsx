@@ -4,7 +4,7 @@ import {Container, Form, Nav, Navbar} from 'react-bootstrap'
 const Header = ( {setLstFiltrada, lstColaboradores} ) => {
 
     const filtrarElementos = (valorDeLaCaja) => {
-        const nuevoArreglo = lstColaboradores.filter((e) => e.nombre.include('valorDeLaCaja'));
+        const nuevoArreglo = lstColaboradores.filter((e) => e.nombre.include(valorDeLaCaja));
         setLstFiltrada(nuevoArreglo);
     }
 
